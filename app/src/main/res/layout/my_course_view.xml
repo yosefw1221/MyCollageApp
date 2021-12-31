@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_below="@id/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/my_course_list"
+            android:divider="@null"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true" >
+
+
+        </ListView>
+        <LinearLayout
+            android:id="@+id/empty_course_view"
+            android:layout_below="@id/my_course_list"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:srcCompat="@drawable/couse_empty48dp"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="#7A7878"
+                android:text="@string/empty_course_desc"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:id="@+id/create_course_fab"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            app:useCompatPadding="true"
+            app:srcCompat="@drawable/ic_add_white_36dp"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</RelativeLayout>

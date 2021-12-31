@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="5"
+        android:layout_height="match_parent">
+        <me.dm7.barcodescanner.zxing.ZXingScannerView
+            android:id="@+id/qr_scanner"
+            app:laserEnabled="true"
+            app:borderColor="@color/Color5"
+            app:borderLength="15dp"
+            app:borderWidth="3dp"
+            app:laserColor="@color/Color5"
+            app:borderAlpha="0.9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/qr_code_status_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="5">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="100dp">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    app:srcCompat="?attr/qrHeaderBackground"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/qr_code_status_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    android:text="@string/qr_share_desc"
+                    android:textColor="#FDFDFD"
+                    />
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatCheckedTextView
+                android:id="@+id/qr_code_chtv_1"
+                style="@style/TextAppearance.MaterialComponents.Caption"
+                android:layout_width="212dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:checkMark="@drawable/circular_check_selector"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/timetable_settings" />
+
+            <androidx.appcompat.widget.AppCompatCheckedTextView
+                android:id="@+id/qr_code_chtv_2"
+                style="@style/TextAppearance.MaterialComponents.Caption"
+                android:layout_width="212dp"
+                android:layout_height="wrap_content"
+                android:checkMark="@drawable/circular_check_selector"
+                android:checked="false"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/course_data" />
+
+            <androidx.appcompat.widget.AppCompatCheckedTextView
+                android:id="@+id/qr_code_chtv_3"
+                style="@style/TextAppearance.MaterialComponents.Caption"
+                android:layout_width="212dp"
+                android:layout_height="wrap_content"
+                android:checkMark="@drawable/circular_check_selector"
+                android:checked="false"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/lesson_data" />
+
+        <androidx.appcompat.widget.AppCompatToggleButton
+            android:id="@+id/qr_code_button"
+            android:gravity="center"
+            android:enabled="false"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:background="@drawable/btn_border_selector"
+            android:layout_marginTop="30dp"
+            android:textOff="@string/scanning" />
+        </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</LinearLayout>

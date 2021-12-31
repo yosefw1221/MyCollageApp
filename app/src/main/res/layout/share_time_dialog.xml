@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_margin="10dp"
+    android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/timetable_share_btn"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="80dp"
+            app:tint="?attr/colorAccent"
+            android:scaleType="centerInside"
+            android:layout_height="80dp"
+            android:background="@drawable/btn_border_selector"
+            app:srcCompat="@drawable/ic_share_white_24dp" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:fontFamily="@font/roboto_condensed_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/share_my_timetable"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/timetable_import_btn"
+            android:tint="?attr/colorAccent"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="80dp"
+            android:scaleType="centerInside"
+            android:layout_height="80dp"
+            android:background="@drawable/btn_border_selector"
+            app:srcCompat="@drawable/ic_file_download_black_24dp" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:fontFamily="@font/roboto_condensed_light"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/import_timetable"/>
+    </LinearLayout>
+</LinearLayout>

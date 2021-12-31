@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="@string/timetable">
+        <MultiSelectListPreference
+            app:allowDividerBelow="true"
+            app:entries="@array/lesson_enable_day_entries"
+            app:entryValues="@array/lesson_enable_day_value"
+            app:defaultValue="@array/lesson_default_value"
+            app:key="enabled_day"
+            app:title="@string/lesson_days" />
+        <Preference
+            app:allowDividerBelow="true"
+            app:key="total_lesson"
+            app:title="@string/lesson_per_day" />
+        <Preference
+            app:allowDividerBelow="true"
+            app:key="lesson_duration"
+            app:title="@string/lesson_duration" />
+        <Preference
+            app:key="lesson_break"
+            app:title="@string/lesson_gap" />
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="Lesson start time" />
+    <Preference
+        app:key="lst_1"
+        app:title="@string/lesson1" />
+    <Preference
+
+        app:key="lst_2"
+        app:title="@string/lesson2" />
+    <Preference
+
+        app:key="lst_3"
+        app:title="@string/lesson3" />
+    <Preference
+        app:key="lst_4"
+        app:title="@string/lesson4" />
+    <Preference
+        app:key="lst_5"
+        app:title="@string/lesson5" />
+    <Preference
+        
+        app:key="lst_6"
+        app:title="@string/lesson6" />
+    <Preference
+        
+        app:key="lst_7"
+        app:title="@string/lesson7" />
+    <Preference
+        
+        app:key="lst_8"
+        app:title="@string/lesson8" />
+    <Preference
+        
+        app:key="lst_9"
+        app:title="@string/lesson9" />
+    <Preference
+        
+        app:key="lst_10"
+        app:title="@string/lesson10" />
+    <Preference
+        
+        app:key="lst_11"
+        app:title="@string/lesson11" />
+    <Preference
+        
+        app:key="lst_12"
+        app:title="@string/lesson12" />
+    <Preference
+
+        app:key="lst_13"
+        app:title="@string/lesson13" />
+    <Preference
+
+        app:key="lst_14"
+        app:title="@string/lesson14" />
+    <Preference
+
+        app:key="lst_15"
+        app:title="@string/lesson15" />
+</PreferenceScreen>

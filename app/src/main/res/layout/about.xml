@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/about" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="15dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardMaxElevation="20dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="30dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/icon_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/app_icon" />
+                <LinearLayout
+                    android:id="@+id/thanks_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:visibility="gone"
+                    android:background="@drawable/lesson_text_bg"
+                    android:orientation="vertical">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:text="@string/thanks_to"
+                        android:textColor="?attr/colorPrimary"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        style="@style/TextAppearance.MaterialComponents.Headline5"
+                        android:layout_height="wrap_content"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_margin="10dp"
+                        style="@style/TextAppearance.AppCompat.Medium"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/thanks"
+                        />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/app_name"
+                    android:textAllCaps="true"
+                    android:textColor="?attr/colorPrimaryDark" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextAppearance.AppCompat.Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="3dp"
+                    android:gravity="center"
+                    android:text="@string/release_day" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/developed_by"
+                    android:textColor="?attr/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:layout_margin="5dp"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:scaleType="fitCenter"
+                        android:onClick="fbContact"
+                        app:srcCompat="@drawable/ic_f_icon" />
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:scaleType="fitCenter"
+                        android:onClick="tgContact"
+                        app:srcCompat="@drawable/ic_tg_logo"/>
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:scaleType="fitCenter"
+                        android:onClick="emailContact"
+                        app:srcCompat="@drawable/ic_new_logo_gmail"/>
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:scaleType="fitCenter"
+                        android:onClick="callContact"
+                        app:srcCompat="@drawable/ic_call_logo"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+                    <androidx.appcompat.widget.AppCompatButton
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:onClick="rate"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/rate_me_dialog_msg" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:visibility="gone"
+                        android:text="Open source licences"
+                        tools:ignore="HardcodedText" />
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:onClick="thanks"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/thanks_to"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

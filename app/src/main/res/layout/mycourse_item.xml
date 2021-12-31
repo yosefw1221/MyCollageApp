@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    app:cardCornerRadius="3dp"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="2dp"
+    app:cardMaxElevation="2dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/my_course_icon"
+            android:layout_width="40dp"
+            android:layout_gravity="center"
+            android:layout_height="40dp"
+            android:focusable="false"
+            app:srcCompat="@drawable/course_name_48dp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:singleLine="true"
+                android:ellipsize="middle"
+                android:id="@+id/my_course_name"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginStart="10dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/my_course_subtext"
+                android:singleLine="true"
+                android:ellipsize="middle"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:id="@+id/my_course_edit_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/edit_btn_selector"
+            android:focusable="false" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:id="@+id/my_course_delete_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/delete_btn_selector"
+            android:focusable="false" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

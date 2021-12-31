@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="widget_header">#8D000000</color>
+    <color name="widget_bg">#1A000000</color>
+    <string-array name="Colors">
+        <item>#D50000</item>
+        <item>#C51162</item>
+        <item>#AA00FF</item>
+        <item>#321063</item>
+        <item>#00C853</item>
+        <item>#6B5700</item>
+        <item>#FF6D00</item>
+        <item>#CE0094</item>
+        <item>#055001</item>
+        <item>#0448F3</item>
+    </string-array>
+    <color name="Color5">#00C853</color>
+    <color name="deepWhite">#FFF</color>
+
+    <color name="primaryColorPink">#DF1F5D</color>
+    <color name="accentColorPink">#FF1870</color>
+    <color name="primaryColorDarkPink">#D30A53</color>
+
+
+    <color name="primaryColorBrown">#AD5502</color>
+    <color name="accentColorBrown">#F78040</color>
+    <color name="primaryColorDarkBrown">#943600</color>
+
+    <color name="primaryColorGreen">#0AAD41</color>
+    <color name="accentColorGreen">#FF1CDC5C</color>
+    <color name="primaryColorDarkGreen">#009439</color>
+
+    <color name="primaryColorBlue">#2271DD</color>
+    <color name="accentColorBlue">#198BEE</color>
+    <color name="primaryColorDarkBlue">#1F6AE2</color>
+
+</resources>

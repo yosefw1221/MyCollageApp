@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircularImageView">
+        <attr name="boarder" format="float" />
+        <attr name="boarder_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="TickTockView">
+        <attr name="tickTextSize" format="dimension" />
+        <attr name="tickRingThickness" format="dimension" />
+        <attr name="tickDotRadius" format="dimension" />
+        <attr name="tickTextColor" format="color" />
+        <attr name="tickEmptyRingColor" format="color" />
+        <attr name="tickFillRingColor" format="color" />
+        <attr name="tickMiddleColor" format="color" />
+        <attr name="tickText" format="string" />
+        <attr name="tickMoveCounterClockwise" format="boolean" />
+        <attr name="tickAutoFitText" format="boolean" />
+        <attr name="tickCircleDuration" format="enum">
+            <enum name="minute" value="0" />
+            <enum name="total_time" value="1" />
+        </attr>
+    </declare-styleable>
+    <!--<attr name="timetableBgColor" format="color" />
+    <attr name="lessonDayTextColor" format="color" />
+    <attr name="lessonBorderColor" format="color" />
+    <attr name="lessonHeaderBgColor" format="color" />
+    <attr name="lessonDayBgColor" format="color" />-->
+    <attr name="courseHeaderBackground" format="reference|color"/>
+    <attr name="lessonHeaderBackground" format="reference"/>
+    <attr name="qrHeaderBackground" format="reference"/>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="0dp"
+        android:layout_weight="5"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/share_illustrator" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tour_four_desc"
+        style="@style/TextAppearance.MaterialComponents.Headline4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:textColor="#fff"
+        android:text="@string/tour_four_desc"
+        app:fontFamily="@font/roboto_thin" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tour_four_rate"
+        style="@style/TextAppearance.AppCompat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.2"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:fontFamily="@font/roboto_condensed_light"
+        android:text="@string/tour_rate_app"
+        android:textColor="#fff" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tour_get_start_btn"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:background="@drawable/tour_btn_selector"
+        android:text="@string/get_started"
+        android:textColor="#FFFFFF"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

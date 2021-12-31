@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SwitchPreferenceCompat
+        app:icon="@drawable/ic_push_teal_a700_24dp"
+        app:defaultValue="true"
+        app:key="push_notification"
+        app:summaryOff="@string/push_notification_summery_off"
+        app:summaryOn="@string/push_notification_summery_on"
+        app:title="@string/push_notification" />
+    <PreferenceCategory
+        app:allowDividerBelow="true"
+        app:title="@string/lesson_notification"
+        app:iconSpaceReserved="false">
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:key="lesson_notification"
+            app:icon="@drawable/course_code_18dp"
+            app:summaryOff="@string/lesson_notification_summery_off"
+            app:summaryOn="@string/lesson_notification_summery_on"
+            app:title="@string/lesson_notification"
+            app:allowDividerBelow="true"/>
+
+        <Preference
+            app:dependency="lesson_notification"
+            app:key="lesson_notification_before"
+            app:title="@string/notification_time"
+            app:icon="@drawable/ic_timer_teal_600_24dp" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:allowDividerBelow="true"
+        app:title="@string/task_notification"
+        app:iconSpaceReserved="false">
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_event_note_pink_500_24dp"
+            app:defaultValue="true"
+            app:key="task_notification"
+            app:summaryOff="@string/task_notification_summery_off"
+            app:summaryOn="@string/task_notification_summery_on"
+            app:title="@string/task_notification"
+            app:allowDividerBelow="true"/>
+
+        <Preference
+            app:dependency="task_notification"
+            app:key="task_notification_before"
+            app:title="@string/notification_time"
+            app:icon="@drawable/ic_timer_teal_600_24dp" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        app:title="@string/exam_notification"
+        app:iconSpaceReserved="false">
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_event_note_pink_500_24dp"
+            app:defaultValue="true"
+            app:key="exam_notification"
+            app:summaryOff="@string/exam_notification_summery_off"
+            app:summaryOn="@string/exam_notification_summery_on"
+            app:title="@string/exam_notification" />
+
+        <Preference
+            app:icon="@drawable/ic_timer_teal_600_24dp"
+            app:dependency="exam_notification"
+            app:key="exam_notification_before"
+            app:title="@string/notification_time" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    app:cardElevation="1dp"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="30dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/basic_examtask"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="@string/exam_task"
+            android:textStyle="bold"
+            app:drawableStartCompat="@drawable/ic_note_add_black_24dp"
+            app:drawableTint="?attr/colorPrimary" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="?android:attr/listDivider" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/basic_course"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="@string/courses"
+            android:textStyle="bold"
+            app:drawableStartCompat="@drawable/ic_book_black_24dp"
+            app:drawableTint="?attr/colorPrimary" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

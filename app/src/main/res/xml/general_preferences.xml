@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright 2018 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:title="@string/general"
+        app:iconSpaceReserved="false">
+        <ListPreference app:key="language"
+            app:title="@string/language"
+            app:icon="@drawable/ic_language_blue_600_24dp"
+            app:entries="@array/language_entries"
+            app:defaultValue="en"
+            app:entryValues="@array/language_value" />
+        <ListPreference app:key="themes"
+            app:title="@string/themes"
+            app:icon="@drawable/ic_color_lens_pink_a400_24dp"
+            app:entries="@array/app_themes_entries"
+            app:entryValues="@array/app_themes_value"
+            app:defaultValue="0"
+            app:allowDividerBelow="true"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="@string/automute">
+        <SwitchPreferenceCompat
+            app:title="@string/automute"
+            app:icon="@drawable/ic_volume_off_amber_700_24dp"
+            app:summary="@string/automute_summery"
+            app:key="automate"
+            app:defaultValue="true" />
+        <Preference
+            app:dependency="automate"
+            app:key="automate_before"
+            app:icon="@drawable/ic_timer_teal_600_24dp"
+            app:title="@string/time_before" />
+        <ListPreference
+            app:dependency="automate"
+            app:icon="@drawable/ic_vibration_red_600_24dp"
+            app:entryValues="@array/automute_mode_value"
+            app:entries="@array/automute_mode_entries"
+            app:key="automate_mode"
+            app:defaultValue="0"
+            app:useSimpleSummaryProvider="true"
+            app:title="@string/automate_mode" />
+    </PreferenceCategory>
+</PreferenceScreen>

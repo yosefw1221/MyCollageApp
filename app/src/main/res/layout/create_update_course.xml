@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:id="@+id/scrollView"
+    android:layout_weight="95"
+    android:layout_height="0dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/parent"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/course_color_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="?attr/courseHeaderBackground"
+                android:scaleType="fitXY"/>
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/color_choice_fab"
+                android:layout_width="wrap_content"
+                app:elevation="5dp"
+                app:backgroundTint="?attr/colorAccent"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                app:srcCompat="@drawable/ic_color_lens_white_36dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/course_name_field"
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                app:counterEnabled="true"
+                app:counterMaxLength="40"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    app:drawableStartCompat="@drawable/course_name_48dp"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="20dp"
+                    android:maxLength="40"
+                    android:inputType="textPersonName"
+                    android:hint="@string/course_name" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/course_code_field"
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="20"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        app:drawableStartCompat="@drawable/course_code_18dp"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="20dp"
+                        android:maxLength="20"
+                        android:inputType="textPersonName"
+                        android:hint="@string/course_code" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/course_abbr_field"
+                        android:layout_width="match_parent"
+                        android:layout_margin="5dp"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="15"
+                        android:layout_height="match_parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="20dp"
+                            android:maxLength="15"
+                            android:inputType="textPersonName"
+                            app:drawableStartCompat="@drawable/course_abbri_18dp"
+                            android:hint="@string/abbreviation" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:id="@+id/course_ects_field"
+                            android:layout_margin="5dp"
+                            app:counterEnabled="true"
+                            app:counterMaxLength="2"
+                            android:layout_height="match_parent">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                app:drawableStartCompat="@drawable/course_ects_18dp"
+                                android:layout_height="wrap_content"
+                                android:drawablePadding="20dp"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:digits="0123456789"
+                                android:hint="@string/credit_hour_ects_cts"
+                                tools:ignore="RtlHardcoded" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="right"
+        android:paddingBottom="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/close_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/close"
+            android:textColor="#a22"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_marginRight="5dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/save_btn"
+            android:layout_width="wrap_content"
+            android:textColor="#292"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:text="@string/add_to_my_course"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

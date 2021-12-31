@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+      <!--  <item name="timetableBgColor">#363636</item>
+        <item name="lessonDayTextColor">#eee</item>
+        <item name="lessonBorderColor">#A89E9E9E</item>
+        <item name="lessonHeaderBgColor">#00000000</item>
+        <item name="lessonDayBgColor">#0A363636</item>-->
+        <item name="android:fontFamily">@font/roboto_condensed_light</item>
+        <item name="fontFamily">@font/roboto_condensed_light</item>
+        <item name="toolbarStyle">@style/ToolBar</item>
+        <item name="actionBarStyle">@style/ToolBar</item>
+    </style>
+    <style name="AppTheme.Blue" parent="AppTheme">
+        <item name="colorPrimary">@color/primaryColorBlue</item>
+        <item name="colorPrimaryDark">@color/primaryColorDarkBlue</item>
+        <item name="colorAccent">@color/accentColorBlue</item>
+        <item name="courseHeaderBackground">@drawable/ic_course_topheader_blue</item>
+        <item name="lessonHeaderBackground">@drawable/ic_lesson_topheader_blue</item>
+        <item name="qrHeaderBackground">@drawable/ic_header_blue</item>
+    </style>
+    <style name="AppTheme.Pink" parent="AppTheme">
+        <item name="colorPrimary">@color/primaryColorPink</item>
+        <item name="colorPrimaryDark">@color/primaryColorDarkPink</item>
+        <item name="colorAccent">@color/accentColorPink</item>
+        <item name="courseHeaderBackground">@drawable/ic_course_topheader_pink</item>
+        <item name="lessonHeaderBackground">@drawable/ic_lesson_topheader_pink</item>
+        <item name="qrHeaderBackground">@drawable/ic_header_pink</item>
+    </style>
+   // green
+    <style name="AppTheme.Green" parent="AppTheme">
+        <item name="colorPrimary">@color/primaryColorGreen</item>
+        <item name="colorPrimaryDark">@color/primaryColorDarkGreen</item>
+        <item name="colorAccent">@color/accentColorGreen</item>
+        <item name="courseHeaderBackground">@drawable/ic_course_topheader_green</item>
+        <item name="lessonHeaderBackground">@drawable/ic_lesson_topheader_green</item>
+        <item name="qrHeaderBackground">@drawable/ic_header_green</item>
+    </style>
+
+    <style name="AppTheme.Brown" parent="AppTheme">
+        <item name="colorPrimary">@color/primaryColorBrown</item>
+        <item name="colorPrimaryDark">@color/primaryColorDarkBrown</item>
+        <item name="colorAccent">@color/accentColorBrown</item>
+        <item name="courseHeaderBackground">@drawable/ic_course_topheader_brown</item>
+        <item name="lessonHeaderBackground">@drawable/ic_lesson_topheader_brown</item>
+        <item name="qrHeaderBackground">@drawable/ic_header_brown</item>
+    </style>
+
+    <style name="DialogActivity" parent="@style/Theme.AppCompat.DayNight.Dialog.Alert">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:theme">@style/AppTheme.Blue</item>
+    </style>
+    <style name="DialogActivity.Blue" parent="DialogActivity">
+        <item name="android:theme">@style/AppTheme.Blue</item>
+    </style>
+    <style name="DialogActivity.Brown" parent="DialogActivity">
+        <item name="android:theme">@style/AppTheme.Brown</item>
+    </style>
+    <style name="DialogActivity.Pink" parent="DialogActivity">
+        <item name="android:theme">@style/AppTheme.Pink</item>
+    </style>
+    <style name="DialogActivity.Green" parent="DialogActivity">
+        <item name="android:theme">@style/AppTheme.Green</item>
+    </style>
+
+    <style name="ToolBar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="titleTextColor">@color/deepWhite</item>
+        <item name="iconTint">@color/deepWhite</item>
+        <item name="android:height">?attr/actionBarSize</item>
+    </style>
+
+
+</resources>

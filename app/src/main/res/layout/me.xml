@@ -1,0 +1,275 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@null">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:titleEnabled="false">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.6"
+                app:srcCompat="?attr/courseHeaderBackground"/>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:translationY="-56dp"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:rowCount="3">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="130dp"
+                android:layout_height="140dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="6dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/me_examtask"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.9"
+                        android:tint="#F3AD00"
+                        android:padding="20dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/ic_event_note_blue_24dp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        
+                        android:background="#2744EEFF"
+                        android:text="@string/exam_task"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="130dp"
+                android:layout_height="140dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="5dp"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/me_course"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.9"
+                        android:padding="20dp"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/ic_course_plan" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#2744EEFF"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/my_courses"
+                         />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="130dp"
+                android:layout_height="140dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="5dp"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/me_gpa"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.9"
+                        android:padding="20dp"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/ic_gpa_reult" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#2744EEFF"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/gpa_calculator"
+                         />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="130dp"
+                android:layout_height="140dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="5dp"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/me_share_timetable"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.9"
+                        android:scaleType="centerInside"
+                        android:padding="20dp"
+                        app:srcCompat="@drawable/ic_course_schedule" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#2744EEFF"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/share_timetable"
+                         />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="130dp"
+                android:layout_height="140dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="5dp"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/me_about"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.9"
+                        android:padding="20dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/ic_info_outline_light_green_500_18dp"
+                        android:tint="#1581D6" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#2744EEFF"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/about"
+                         />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="130dp"
+                android:layout_height="140dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="5dp"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/me_setting"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.9"
+                        android:padding="20dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/ic_settings_light_blue_800_24dp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#2744EEFF"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/settings"
+                         />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+    </androidx.core.widget.NestedScrollView>
+<!--    <com.google.android.gms.ads.AdView-->
+<!--        android:id="@+id/adView"-->
+<!--        app:adSize="BANNER"-->
+<!--        app:adUnitId="@string/me_id"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content" />-->
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

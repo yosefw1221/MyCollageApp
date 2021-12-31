@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Preference
+        app:fragment="com.yotor.solution.mytimetable.ui.Setting.GeneralPreferenceFragment"
+        app:icon="@drawable/ic_info_outline_light_green_500_18dp"
+        app:key="general_header"
+        app:allowDividerAbove="true"
+        app:title="@string/general" />
+
+    <Preference
+        app:fragment="com.yotor.solution.mytimetable.ui.Setting.NotificationPreferenceFragment"
+        app:icon="@drawable/ic_notifications_none_blue_600_18dp"
+        app:key="notification_header"
+        app:allowDividerAbove="true"
+        app:title="@string/notification" />
+
+    <Preference
+        app:fragment="com.yotor.solution.mytimetable.ui.Setting.TimetablePreferenceFragment"
+        app:icon="@drawable/ic_timetable"
+        app:key="timetable_header"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"
+        app:title="@string/timetable" />
+    <Preference
+        app:fragment="com.yotor.solution.mytimetable.ui.Setting.AdvancedPreferenceFragment"
+        app:icon="@drawable/ic_settings_red_800_18dp"
+        app:key="advanced_header"
+        app:allowDividerAbove="true"
+        app:title="@string/advanced" />
+    <Preference
+        app:allowDividerAbove="true"
+        app:icon="@drawable/ic_info_outline_light_green_500_18dp"
+        app:key="about_header"
+        app:title="@string/about" />
+
+</PreferenceScreen>

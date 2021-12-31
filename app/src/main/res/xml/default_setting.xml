@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+
+    <entry>
+        <key>application_ids</key>
+        <value>ca-app-pub-2301026347150212~6419090037</value>
+    </entry>
+    <entry>
+        <key>min_fetch_interval</key>
+        <value>3600</value>
+    </entry>
+    <entry>
+        <key>ads_interval</key>
+        <value>60</value>
+    </entry>
+    <entry>
+        <key>ads_update</key>
+        <value>40</value>
+    </entry>
+    <entry>
+        <key>ads_show_on_exist</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>native_ads</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>ads_banner_on_me</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>ads_banner_on_home</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>ads_banner_on_gpa</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>terminate</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>terminate_msg</key>
+        <value>This App has not work for certain day </value>
+    </entry>
+    <entry>
+        <key>terminate_action</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>message</key>
+        <value>{"id":"0","title":"welcome","msg":"Welcome to MyCollageApp","url":"http://t.me/josefworku","action":"Join Telegram","expire":2,"pin":true}</value>
+    </entry>
+    <entry>
+        <key>about_tg</key>
+        <value>https://t.me/josefworku</value>
+    </entry>
+    <entry>
+        <key>about_fb</key>
+        <value>https://www.facebook.com/josystems/</value>
+    </entry>
+    <entry>
+        <key>about_email</key>
+        <value>yosefworku18@gmail.com</value>
+    </entry>
+    <entry>
+        <key>about_call</key>
+        <value>+251920005744</value>
+    </entry>
+</defaultsMap>

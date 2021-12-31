@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/qr_code_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6.5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.5"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="80dp"
+                android:id="@+id/qr_prev"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                app:tint="@color/Color5"
+                android:background="@drawable/btn_border_selector"
+                app:srcCompat="@drawable/ic_back_white_24dp" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="80dp"
+                android:id="@+id/qr_next"
+                android:background="@drawable/btn_border_selector"
+                android:layout_height="45dp"
+                app:srcCompat="@drawable/ic_arrow_forward_green_a700_24dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/qr_code_chtv_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:drawableStartCompat="@drawable/ic_brightness_1_green_a700_24dp"
+                android:drawablePadding="20dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/timetable_setting" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/qr_code_chtv_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:drawableStartCompat="@drawable/ic_brightness_1_green_a700_24dp"
+                android:drawablePadding="20dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/course_data" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/qr_code_chtv_3"
+                android:layout_width="212dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:drawableStartCompat="@drawable/ic_brightness_1_green_a700_24dp"
+                android:drawablePadding="20dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/lesson_data" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

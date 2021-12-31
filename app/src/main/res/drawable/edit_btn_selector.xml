@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:drawable="@drawable/ic_mode_edit_blue_a700_48dp"
+    android:state_selected="false"/>
+    <item android:state_selected="true"
+        android:drawable="@drawable/ic_mode_edit_selected48dp"/>
+</selector>

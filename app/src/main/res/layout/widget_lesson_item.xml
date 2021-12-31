@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_item_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#5C252525"
+    android:gravity="center_horizontal"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/widget_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:shadowDy="2"
+        android:shadowDx="2"
+        android:shadowColor="#000"
+        android:textColor="#eff"
+        android:text="2:30 am\n-\n4:30 am" />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="0.5dp"
+        android:background="#00FFFF"
+        android:layout_height="match_parent"
+        android:text="|"/>
+    <LinearLayout
+        android:layout_weight="99"
+        android:layout_gravity="center"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/widget_item_title"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:textColor="#eff"
+            android:shadowRadius="4"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowColor="#000" />
+        <TextView
+            android:id="@+id/widget_item_subtitle"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="wrap_content"
+            android:paddingTop="5dp"
+            android:maxLines="1"
+            android:textColor="#aaa"
+            android:shadowRadius="2"
+            android:shadowDx="2"
+            android:layout_gravity="start"
+            android:visibility="gone"
+            android:shadowDy="2"
+            android:shadowColor="#00061B"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>

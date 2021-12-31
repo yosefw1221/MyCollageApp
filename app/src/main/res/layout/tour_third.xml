@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:paddingLeft="30dp"
+        android:paddingTop="30dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="30dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/alert_ilustrator" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tour_three_desc"
+        style="@style/TextAppearance.MaterialComponents.Headline5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="@string/tour_three_desc"
+        android:textColor="#fff"
+        app:fontFamily="@font/roboto_thin" />
+
+
+</LinearLayout>
